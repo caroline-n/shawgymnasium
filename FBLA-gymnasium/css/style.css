@@ -1,0 +1,200 @@
+
+:root{
+    --text-color: #000000;
+    --color-1:#e3e5e9;
+    --accent-color:darkslategrey;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 12pt;
+    font-family: "Montserrat", "Roboto Condensed", Segoe UI, Tahoma, sans-serif;
+}
+body{
+    background-image: url('../images/pexels-yusronell.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: -10; /* Layer the dimming effect behind the content */
+}
+nav{
+    height: 82px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    height: 100%;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav a:hover{
+    color: var(--accent-color);
+    text-shadow: 0 2px 10px #ecece9bd;
+}
+nav #home-link{
+    margin-right: auto;
+}
+nav svg{
+    fill: var(--text-color);
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+#intro{
+    font-family: Segoe UI, Tahoma, sans-serif;
+    position: relative;
+    transform: translateY(50px);
+    margin-left: 20vw;
+    margin-right: 15vw;
+    transform: translateY(50px);
+}
+@media(max-width: 500px){
+    .links-container{
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed; /*appears before everything*/
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+
+        background-color: var(--color-1);
+        box-shadow: 5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.5s ease-out;
+    }
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    nav a:hover{
+        background-color: var(--accent-color);
+        color:var(--color-1);
+    }
+    .open-sidebar-button, .close-sidebar-button{
+        padding: 20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    #intro{
+        position: relative;
+        margin-left: 18px;
+        margin-right: 0%;
+        transform: translateY(50px);
+        max-width: 90vh;
+    }
+}
+@media (min-width: 500px) and (max-width: 730px) {
+    #intro{
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+}
+article div{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    width: clamp(432px, 40vw, 900px);
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
+    border:#e3e5e940 solid;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(58, 58, 58, 0.809);
+    color: var(--color-1);
+}
+article div:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border:#ffffff58 solid;
+}
+.section-container h1 {
+    margin-top: 10px;
+    text-align: center;
+   font-size: 28px;
+    font-family: "Roboto Condensed", Tahoma, sans-serif;
+}
+/* Styling the bottom border SVG */
+.bottom-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.bottom-border-near{
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+    opacity: 50%;
+    transform: translateX(15px);
+}
+.bottom-border-far{
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    width: 100%;
+    height: auto;
+    z-index: -3;
+    opacity: 30%;
+    transform: translateX(7px);
+}
+.background-rectangle {
+    position: relative;
+    top: 350px; /* Position the rectangle correctly */
+    z-index: 0; /* Keep this below other content */
+}
+footer{
+    z-index: 8;
+    position: relative;
+    top: 46px;
+    height: 132px;
+    background-color:#f4f4f4;
+    text-align: center;
+}
