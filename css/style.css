@@ -123,9 +123,8 @@ nav svg{
     #intro{
         position: relative;
         margin: 0 auto;
-        margin-bottom: 20px;
         transform: translateY(50px);
-        max-width: 90vh;
+        width: 100vh;
         background-color: #e3e5e9;
         padding: 10px;
     }
@@ -148,12 +147,12 @@ nav svg{
         margin-right: 5px;
     }
 }
-@media(max-height: 700px){
+@media(max-height: 700px) or (min-height: 1000px){
     #intro{
         position: relative;
         margin: 0 auto;
         transform: translateY(50px);
-        max-width: 90vh;
+        width: 100vh;
         background-color: #e3e5e9;
         padding: 10px;
     }
@@ -245,7 +244,7 @@ footer{
     z-index: 8;
     position: relative;
     top: 46px;
-    height: 132px;
+    min-height: 132px;
     background-color: #e3e5e9;
     text-align: center;
 }
