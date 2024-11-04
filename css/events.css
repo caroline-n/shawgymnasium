@@ -83,11 +83,11 @@ nav svg{
 }
 /* Style the main content */
 main{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     color: darkslategray;
 }
 main h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     color: #e3e5e9;
 }
 .container{
