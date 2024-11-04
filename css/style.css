@@ -122,7 +122,8 @@ nav svg{
     }
     #intro{
         position: relative;
-        margin: 0 0 12px 8px;
+        margin: 0 auto;
+        margin-bottom: 20px;
         transform: translateY(50px);
         max-width: 90vh;
         background-color: #e3e5e9;
@@ -147,10 +148,11 @@ nav svg{
         margin-right: 5px;
     }
 }
-@media(max-height: 1000px){
+@media(max-height: 700px){
     #intro{
         position: relative;
-        margin: 0 0 12px 8px;
+        margin: 0 auto;
+        margin-bottom: 20px;
         transform: translateY(50px);
         max-width: 90vh;
         background-color: #e3e5e9;
