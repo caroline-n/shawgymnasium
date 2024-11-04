@@ -145,6 +145,9 @@ button.navigation:hover{
         transform: scale(1.3);
         color: #e3e5e9;
     }
+    main h1{
+        font-size: 1.8em;
+    }
     body{
         font-size: 12px;
     }
