@@ -120,11 +120,11 @@ nav svg{
         left: 0;
         z-index: 9;
     }
-    #intro{
+    #intro, footer{
         position: relative;
         margin: 0 auto;
         transform: translateY(50px);
-        width: 100vh;
+        width: 100vw;
         background-color: #e3e5e9;
         padding: 10px;
     }
@@ -241,6 +241,7 @@ section{
     max-width: 98vw;
 }
 footer{
+    padding: 10px;
     z-index: 8;
     position: relative;
     top: 46px;
