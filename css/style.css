@@ -126,7 +126,6 @@ nav svg{
         transform: translateY(50px);
         width: 100vw;
         background-color: #e3e5e9;
-        padding: 10px;
     }
     .background-rectangle {
         display: none;
