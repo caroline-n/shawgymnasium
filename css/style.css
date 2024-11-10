@@ -32,12 +32,6 @@ body::before{
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
     z-index: -10; /* Layer the dimming effect behind the content */
 }
-.logo{
-    height: 80px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-}
 nav{
     height: 82px;
     background-color: var(--color-1);
@@ -54,7 +48,7 @@ nav{
 }
 nav a{
     height: 100%;
-    padding: 0 18px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -83,6 +77,7 @@ nav svg{
     background-color:#f4f4f4;
 }
 @media(max-width: 500px){
+
     .links-container{
 
         flex-direction: column;
@@ -110,7 +105,7 @@ nav svg{
         color:var(--color-1);
     }
     .open-sidebar-button, .close-sidebar-button{
-        padding: 5px;
+        padding: 20px;
         display: block;
     }
     #sidebar-active:checked ~ .links-container{
@@ -149,6 +144,9 @@ nav svg{
     #intro{
         padding:10vw;
         margin: 0 auto;
+    }
+    .logo{
+        display: none;
     }
 }
 @media (min-width: 801px) {
