@@ -42,7 +42,13 @@ body::before{
     border-radius: 2px;
     
     cursor: pointer;
-    }
+}
+.logo{
+    height: 80px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
 nav{
     height: 82px;
     background-color: var(--color-1);
@@ -59,7 +65,7 @@ nav{
 }
 nav a{
     height: 100%;
-    padding: 0 25px;
+    padding: 0 18px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -94,7 +100,7 @@ nav svg{
         color:var(--color-1);
     }
     .open-sidebar-button, .close-sidebar-button{
-        padding: 20px;
+        padding: 5px;
         display: block;
     }
     #sidebar-active:checked ~ .links-container{

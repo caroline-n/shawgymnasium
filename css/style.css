@@ -9,8 +9,8 @@
     padding: 0;
 }
 html{
-    font-size: 11pt;
-    font-family: "Roboto Condensed", Segoe UI, Tahoma, sans-serif;
+    font-size: 12pt;
+    font-family: "Montserrat", "Roboto Condensed", Segoe UI, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -32,7 +32,12 @@ body::before{
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
     z-index: -10; /* Layer the dimming effect behind the content */
 }
-
+.logo{
+    height: 80px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
 nav{
     height: 82px;
     background-color: var(--color-1);
@@ -49,7 +54,7 @@ nav{
 }
 nav a{
     height: 100%;
-    padding: 0 20px;
+    padding: 0 18px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -87,7 +92,7 @@ nav svg{
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 300px;
+        width: 90%;
 
         background-color: var(--color-1);
         box-shadow: 5px 0 5px rgba(0, 0, 0, 0.25);
@@ -105,7 +110,7 @@ nav svg{
         color:var(--color-1);
     }
     .open-sidebar-button, .close-sidebar-button{
-        padding: 20px;
+        padding: 5px;
         display: block;
     }
     #sidebar-active:checked ~ .links-container{
@@ -195,7 +200,7 @@ article div:hover{
     background-color: rgba(255, 255, 255, 0.1);
     border:#ffffff58 solid;
 }
-.section-container h1 {
+.section-container h2 {
     margin-top: 10px;
     text-align: center;
     font-size: 28px;
