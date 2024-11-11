@@ -15,7 +15,7 @@ document.getElementById("ticketForm").addEventListener("submit", function(event)
     const quantity = document.getElementById("quantity").value;
 
     // Define your Google Sheet API URL here\
-    const url = 'https://script.google.com/macros/s/AKfycbyd2-sKvRCdTiGcG63fpH3xQqDcKFodg_U9IeX4HlkJQfLVLzX_Bapz05iJkQ7s2sz-/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbxHflpFuntdnqy-9_ltg2n81mBM3DCywGkgdZIBxVWwn5kXI0fFL6zTMNQrCYWusnM6/exec';
     
 
     fetch(url, {
