@@ -79,6 +79,35 @@ nav svg{
 .open-sidebar-button, .close-sidebar-button{
     display: none;
 }
+/* Styling the main content */
+main{
+    width: clamp(300px, 60vw, 1200px);
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.section-content{
+    width: 600px;
+}
+h2, p{
+    color: var(--color-1);
+}
+p{
+    font-family: Segoe UI, "Roboto Condensed", Tahoma, sans-serif;
+}
+iframe, #seating-chart{
+    width: 600px;
+    margin: 0 auto;
+}
+iframe{
+    height:450px;
+}
 @media(max-width: 500px) {
     .links-container{
         flex-direction: column;
@@ -119,5 +148,11 @@ nav svg{
         top: 0;
         left: 0;
         z-index: 9;
+    }
+}
+@media (max-width: 700px) {
+    iframe, #seating-chart{
+        width: min(333px, 90vw);
+        height: auto;
     }
 }
