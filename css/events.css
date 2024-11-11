@@ -149,7 +149,7 @@ button.navigation:hover{
         font-size: 1.8em;
     }
     body{
-        font-size: 11px;
+        font-size: 10px;
     }
     .links-container{
         flex-direction: column;
@@ -174,8 +174,8 @@ button.navigation:hover{
         transition: all 250ms;
     }
     .day-number{
-        font-size: 22px;
-        margin: auto;
+        font-size: 24px;
+        margin: 4px 0;
     }    
     nav a{
         font-size: 12pt;
@@ -205,10 +205,13 @@ button.navigation:hover{
         z-index: 9;
     }
     #calendar{
-        width: 90vw;
+        width: 95vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .container{
+        padding: 16px;
     }
 }
 @media (min-width: 501px) and (max-width: 1230px) {
