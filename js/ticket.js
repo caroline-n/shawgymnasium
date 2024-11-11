@@ -17,10 +17,11 @@ document.getElementById("ticketForm").addEventListener("submit", function(event)
     // Define your Google Sheet API URL here\
     const url = 'https://script.google.com/macros/s/AKfycbyd2-sKvRCdTiGcG63fpH3xQqDcKFodg_U9IeX4HlkJQfLVLzX_Bapz05iJkQ7s2sz-/exec';
     
+
     fetch(url, {
         method: "POST",
         headers: {
-            "Content-Type": "application/x-www-form-urlencoded" // URL-encoded form data
+            "Content-Type": "application/x-www-form-urlencoded"
         },
         body: new URLSearchParams({
             name: name,
@@ -34,11 +35,11 @@ document.getElementById("ticketForm").addEventListener("submit", function(event)
         if (data.result === "success") {
             document.getElementById("confirmationMessage").innerText = "Reservation Successful!";
         } else {
-            document.getElementById("confirmationMessage").innerText = "Reservation Failed. Please try again.";
+            document.getElementById("confirmationMessage").innerText = "Reservation Failed. Please try again later.";
         }
     })
     .catch(error => {
-        document.getElementById("confirmationMessage").innerText = "Error: " + error.message;
+        document.getElementById("confirmationMessage").innerText = "Error: Please try again later.";
     });
 
 });
