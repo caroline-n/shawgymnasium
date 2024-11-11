@@ -15,30 +15,30 @@ document.getElementById("ticketForm").addEventListener("submit", function(event)
     const quantity = document.getElementById("quantity").value;
 
     // Define your Google Sheet API URL here\
-    const url = 'https://script.google.com/macros/s/AKfycbw35EHha8-K4Vpa6zA7mbT91eDjf0X7L6S2VLFWaubsoMxQdotYuJINbcpz2K7YA8U8/exec';
-
-fetch(url, {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/x-www-form-urlencoded" // URL-encoded form data
-    },
-    body: new URLSearchParams({
-        name: name,
-        email: email,
-        eventDate: eventDate,
-        quantity: quantity
+    const url = 'https://script.google.com/macros/s/AKfycbyd2-sKvRCdTiGcG63fpH3xQqDcKFodg_U9IeX4HlkJQfLVLzX_Bapz05iJkQ7s2sz-/exec';
+    
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded" // URL-encoded form data
+        },
+        body: new URLSearchParams({
+            name: name,
+            email: email,
+            eventDate: eventDate,
+            quantity: quantity
+        })
     })
-})
-.then(response => response.json())
-.then(data => {
-    if (data.result === "success") {
-        document.getElementById("confirmationMessage").innerText = "Reservation Successful!";
-    } else {
-        document.getElementById("confirmationMessage").innerText = "Reservation Failed. Please try again.";
-    }
-})
-.catch(error => {
-    document.getElementById("confirmationMessage").innerText = "Error: " + error.message;
-});
+    .then(response => response.json())
+    .then(data => {
+        if (data.result === "success") {
+            document.getElementById("confirmationMessage").innerText = "Reservation Successful!";
+        } else {
+            document.getElementById("confirmationMessage").innerText = "Reservation Failed. Please try again.";
+        }
+    })
+    .catch(error => {
+        document.getElementById("confirmationMessage").innerText = "Error: " + error.message;
+    });
 
 });

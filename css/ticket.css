@@ -173,3 +173,21 @@ button:hover {
         z-index: 9;
     }
 }
+/*function doPost(e) {
+    const sheet = SpreadsheetApp.openById("1CgvGyVMq9G3tGmU_LnSEdgFgaDCieODWglYsfwkYVJY").getSheetByName("Sheet1");
+
+    // Retrieve data from POST request
+    const data = e.parameter;
+    const name = data.name;
+    const email = data.email;
+    const eventDate = data.eventDate;
+    const quantity = data.quantity;
+
+    // Insert data into Google Sheets
+    sheet.appendRow([name, email, eventDate, quantity]);
+
+    // Send a JSON response
+    return ContentService.createTextOutput(
+        JSON.stringify({ result: "success" })
+    ).setMimeType(ContentService.MimeType.JSON);
+}*/
