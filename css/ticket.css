@@ -127,7 +127,7 @@ button:hover {
 }
 
 #confirmationMessage {
-    text-align: center;
+    text-align: left;
     color: green;
     margin-top: 15px;
 }
@@ -191,3 +191,26 @@ button:hover {
         JSON.stringify({ result: "success" })
     ).setMimeType(ContentService.MimeType.JSON);
 }*/
+/*
+// Send confirmation email
+        const subject = "Your Reservation is Confirmed!";
+        const body = `
+            Hello ${name},
+            
+            Thank you for your reservation at our venue. Your booking details are as follows:
+            
+            Event Date: ${eventDate}
+            Quantity of Tickets: ${quantity}
+            
+            We look forward to welcoming you!
+            
+            If you have any questions, feel free to email us.
+            
+            Best regards,
+            Shaw's Gymnasium
+        `;
+
+        MailApp.sendEmail(email, subject, body);
+
+        // Response to the client
+*/

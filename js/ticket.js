@@ -15,7 +15,7 @@ document.getElementById("ticketForm").addEventListener("submit", function(event)
     const quantity = document.getElementById("quantity").value;
 
     // Define your Google Sheet API URL here\
-    const url = 'https://script.google.com/macros/s/AKfycbxHflpFuntdnqy-9_ltg2n81mBM3DCywGkgdZIBxVWwn5kXI0fFL6zTMNQrCYWusnM6/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbwQmmw0d3wchtBx1OPfmRJ1NUeIWL01Qxpnmd9b8GrowXzFvxQWMDQVPtQvLWAa4KaL/exec';
     
 
     fetch(url, {
@@ -33,7 +33,7 @@ document.getElementById("ticketForm").addEventListener("submit", function(event)
     })
     .then(response => {
         console.log(response);
-        document.getElementById("confirmationMessage").innerText = "Reservation Successful!";
+        document.getElementById("confirmationMessage").innerText = "Your reservation is going through! Please check your inbox and spam/junk folders for confirmation. If you don't receive it within 1 hour, contact us at Help page.";
     })
     .catch(error => {
         document.getElementById("confirmationMessage").innerText = "Error: Please try again later.";
