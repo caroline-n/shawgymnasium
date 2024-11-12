@@ -13,19 +13,10 @@ html{
     font-family: "Montserrat", "Roboto Condensed", Segoe UI, Tahoma, sans-serif;
 }
 body{
-    background-color: var(--accent-color);
+    line-height: 1.6;
+    background-color:#f9f9f9;
     overflow-x: hidden;
     overflow-y: visible;
-}
-body::before{
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    z-index: -10; /* Layer the dimming effect behind the content */
 }
 ::-webkit-scrollbar{
     width: 10px;
@@ -79,6 +70,53 @@ nav svg{
 .open-sidebar-button, .close-sidebar-button{
     display: none;
 }
+/*Styling main content*/
+article{
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background: #f9f9f9;
+}
+article:hover{
+    border-radius: 8px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), 
+    -10px -10px 10px white;
+}
+/* Headings */
+h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+}
+h4{
+    font-size: 1.2rem;
+    color: rgb(52, 103, 103);
+}
+details {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+p, li{
+    font-family: "Hind Madurai", Segoe UI, "Roboto Condensed", Tahoma, sans-serif;
+}
+li{
+    margin-left: 24px;
+}
+/* Links */
+main a {
+    color: rgb(52, 103, 103);
+    text-decoration: none;
+}
+
+main a:hover {
+    color: var(--accent-color);
+}
+
 @media(max-width: 500px) {
     .links-container{
         flex-direction: column;
@@ -119,5 +157,25 @@ nav svg{
         top: 0;
         left: 0;
         z-index: 9;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    article {
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), 
+            -10px -10px 10px white;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+
+    h3 {
+        font-size: 1.25rem;
     }
 }

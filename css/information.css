@@ -12,6 +12,7 @@ html{
     font-family: "Montserrat", "Roboto Condensed", Segoe UI, Tahoma, sans-serif;
 }
 body{
+    line-height: 1.6;
     background-color: var(--accent-color);
     overflow-x: hidden;
     overflow-y: visible;
