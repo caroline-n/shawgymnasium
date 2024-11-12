@@ -8,7 +8,7 @@
     <link rel="icon" href="images/grey-logo.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         </style>
 </head>
@@ -35,9 +35,9 @@
 
     </nav>
     <main>
-        <section id="directions">
+        <section>
             <div class="section-content">
-                <h2>Directions</h2>
+                <h1>Directions</h1>
                 <p>Use the map below to find directions to Shaw High School, Columbus, GA:</p>
                 <br>
                 <!-- Google Maps Embed iframe -->
@@ -52,15 +52,71 @@
         </section>
         <section>
             <div class="section-content">
-                <h2>Seating Chart</h2>
+                <h1>Seating Chart & Amenities</h1>
                 <p>The seating chart for our 3500-seat arena is designed with comfort and accessibility in mind, 
                     ensuring a seamless experience for all visitors. The arena is divided into 54 distinct seating areas, 
-                    which are strategically distributed to provide clear sightlines and optimal views for every guest.</p>
+                    which are strategically distributed to provide clear sightlines and optimal views for every guest. 
+                    (Check out some images at <a href="gallery.html" style="color: white;">Gallery</a>)</p>
+            <br>
+                <details>
+                    <summary><h4>Bathrooms</h4></summary>
+                    <p>Restrooms are conveniently located at each of the <i>four corners</i> of the arena, 
+                        ensuring that attendees can easily find facilities no matter where they are seated.</p>
+                </details>
+            <br>
+                <details>
+                    <summary><h4>Disability-Support Areas</h4></summary>
+                    <p>Special attention has been given to accessibility. Sections <b>A</b> and <b>G</b> are designated as disability-support areas, 
+                        featuring wider aisles and spaces that can accommodate wheelchairs or other mobility aids. 
+                        These areas are located near key amenities for easy access.</p>
+                </details>
+            <br>
+                <details>
+                    <summary><h4>Accessibility Features</h4></summary>
+                    <p>In addition to the disability-support areas, there are wide aisles, handrails, and elevators 
+                        available for easy access to different levels of the arena, ensuring that all guests can enjoy their experience.</p>
+                </details>
+            <br>
+                <details>
+                    <summary><h4>Additional Amenities</h4></summary>
+                    <p>Concessions and merchandise stands are strategically placed in proximity to all seating areas, 
+                        allowing guests to easily access food, drinks, and memorabilia throughout the event.</p>
+                </details>
+
                 <br>
                 <img id="seating-chart" src="/images/seating-chart.jpg" alt="seating-chart-from-row-a-to-row-l">
             </div>
         </section>
+        <section>
+            <div class="section-content">
+                <h1>Policies</h1><br>
+                <h4>Cancellation Policy</h4>
+                <p class="text-span">All ticket sales are final. No refunds will be issued unless the event is cancelled. In the event of cancellation, tickets will be refunded.</p>
+
+                <br>
+                <h4>Bags and Items</h4>
+                <p class="text-span">Only clear bags are allowed inside the arena. No oversized bags or backpacks are permitted. Personal items such as phones, wallets, and small purses are allowed.</p>
+
+                <br>
+                <h4>Allowed Items</h4>
+                <p class="text-span">Guests are welcome to bring their own water bottles, but they must be sealed. No outside food or drinks will be permitted unless specified for special events.</p>
+
+            </div>
+        </section>
     </main>
-    <script src="js/index.js"></script>
+<!--
+        <script lang="js">
+        const details = document.querySelectorAll('details');
+details.forEach(detail => {
+    detail.addEventListener('click', function () {
+        details.forEach(otherDetail => {
+            if (otherDetail !== detail) {
+                otherDetail.removeAttribute('open');
+            }
+        });
+    });
+});
+
+    </script> -->
 </body>
 </html>

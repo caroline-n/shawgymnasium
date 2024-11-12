@@ -9,7 +9,6 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 12pt;
     font-family: "Montserrat", "Roboto Condensed", Segoe UI, Tahoma, sans-serif;
 }
 body{
@@ -84,6 +83,7 @@ main{
     width: clamp(300px, 60vw, 1200px);
     margin: 0 auto;
     padding-top: 2rem;
+    color: var(--color-1);
 }
 section{
     display: flex;
@@ -95,13 +95,42 @@ section{
 .section-content{
     width: 600px;
 }
-h2, p{
-    color: var(--color-1);
-}
 p{
-    font-family: Segoe UI, "Roboto Condensed", Tahoma, sans-serif;
+    font-family: "Hind Madurai", Segoe UI, "Roboto Condensed", Tahoma, sans-serif;
 }
-iframe, #seating-chart{
+
+details summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+details summary::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid var(--color-1); /* Creates the triangle */
+    margin-right: 10px; /* Adds space between the triangle and the text */
+}
+
+details[open] summary::before {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid var(--color-1); /* Point the triangle down when the details are open */
+    border-bottom: none;
+};
+details {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+details summary h4 {
+    margin-left: 10px; /* Optional: Add spacing between the triangle and the text */
+}
+
+iframe, #seating-chart, .text-span{
     width: 600px;
     margin: 0 auto;
 }
@@ -151,7 +180,7 @@ iframe{
     }
 }
 @media (max-width: 700px) {
-    iframe, #seating-chart{
+    iframe, #seating-chart, .text-span{
         width: min(333px, 90vw);
         height: auto;
     }
