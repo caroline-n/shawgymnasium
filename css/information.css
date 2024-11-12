@@ -87,6 +87,7 @@ main{
     color: var(--color-1);
 }
 section{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +97,7 @@ section{
 .section-content{
     width: 600px;
 }
-p{
+main{
     font-family: "Hind Madurai", Segoe UI, "Roboto Condensed", Tahoma, sans-serif;
 }
 

@@ -10,7 +10,7 @@
 }
 html{
     font-size: 12pt;
-    font-family: "Montserrat", "Roboto Condensed", Segoe UI, Tahoma, sans-serif;
+    font-family: "Hind Madurai", "Montserrat", "Roboto Condensed", Segoe UI, Tahoma, sans-serif;
 }
 body{
     line-height: 1.6;
@@ -101,7 +101,7 @@ details {
     overflow: hidden;
     transition: all 0.3s ease;
 }
-p, li{
+main{
     font-family: "Hind Madurai", Segoe UI, "Roboto Condensed", Tahoma, sans-serif;
 }
 li{
