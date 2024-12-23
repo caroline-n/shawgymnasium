@@ -139,7 +139,7 @@ iframe, #seating-chart, .text-span{
 iframe{
     height:450px;
 }
-@media(max-width: 500px) {
+@media(max-width: 900px) {
     .links-container{
         flex-direction: column;
         align-items: flex-start;

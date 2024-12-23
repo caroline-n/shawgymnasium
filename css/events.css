@@ -140,7 +140,7 @@ button.navigation:hover{
     color:rgb(3, 94, 94);
 }
 
-@media(max-width: 500px) {
+@media(max-width: 900px) {
     button.navigation:active{
         transform: scale(1.3);
         color: #e3e5e9;
