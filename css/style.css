@@ -155,8 +155,11 @@ nav svg{
     }
 }
 @media(max-height: 700px) or (min-height: 1000px){
+    article{
+        margin: 9% 0;
+    }
     #intro{
-        transform: translateY(50px);
+        transform: translateY(80px);
         background-color: #e3e5e9;
     }
     .background-rectangle {
