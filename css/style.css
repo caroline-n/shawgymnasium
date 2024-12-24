@@ -180,7 +180,7 @@ nav svg{
     }
 }
 
-article div{
+.section-container{
     height: 50px;
     display: flex;
     justify-content: center;
@@ -194,7 +194,7 @@ article div{
     box-shadow: 0 0 5px rgba(58, 58, 58, 0.809);
     color: var(--color-1);
 }
-article div:hover{
+.section-container:hover{
     background-color: rgba(255, 255, 255, 0.1);
     border:#ffffff58 solid;
 }
