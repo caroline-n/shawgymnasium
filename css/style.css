@@ -74,10 +74,9 @@ nav svg{
     font-family: Segoe UI, Tahoma, sans-serif;
     position: relative;
     transform: translateY(50px);
-    background-color:#f4f4f4;
+    background-color: #f4f4f4;
 }
 @media(max-width: 500px){
-
     .links-container{
 
         flex-direction: column;
@@ -125,7 +124,6 @@ nav svg{
     footer{
         margin: 0 auto;
         width: 100vw;
-        background-color: #e3e5e9;
     }
     .background-rectangle {
         display: none;
@@ -151,17 +149,10 @@ nav svg{
 }
 @media (min-width: 801px) {
     #intro{
-        padding: 16px 20vw;
+        padding: 16px 20vw 16px 23vw;
     }
 }
 @media(max-height: 700px) or (min-height: 1000px){
-    article{
-        margin: 9% 0;
-    }
-    #intro{
-        transform: translateY(80px);
-        background-color: #e3e5e9;
-    }
     .background-rectangle {
         display: none;
     }
@@ -207,6 +198,7 @@ nav svg{
     font-size: 25px;
     font-family: "Roboto Condensed", Tahoma, sans-serif;
 }
+
 /* Styling the bottom border SVG */
 .bottom-border {
     position: absolute;
@@ -243,12 +235,33 @@ nav svg{
     top: 350px; /* Position the rectangle correctly */
     z-index: 0; /* Keep this below other content */
 }
+
+/* Slyling event links*/
+.event-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px 16px 50px 6px;
+    background-color:#f4f4f4;
+}
+.event-box{
+    flex: 1;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    margin: 30px 10px 10px 10px;
+    padding: 20px;
+    background-color: rgba(44, 46, 46, 0.102);
+    backdrop-filter: blur(3px);
+    border:#e3e5e940 solid;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(58, 58, 58, 0.809);
+}
 footer{
     padding: 10px 0 10px 0;
     z-index: 8;
-    position: relative;
-    top: 46px;
     min-height: 132px;
-    background-color: #e3e5e9;
+    background-color: var(--color-1);
     text-align: center;
 }
