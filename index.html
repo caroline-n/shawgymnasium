@@ -38,7 +38,7 @@
     </nav>
     
     <main>
-        <article>
+        <article class="hidden">
             <a href="events.html" target="_blank" style="text-decoration: none;"><div class="section-container">
                 <h2>Upcoming Events</h2>
             </div></a>
@@ -51,7 +51,8 @@
             <a href="planner.html" style="text-decoration: none;"><div class="section-container">
                 <h2>Plan Your Event</h2>
             </div></a>
-            
+        </article>
+        <section>  
             <!-- Bottom border SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 8" overflow="visible" preserveAspectRatio="xMinYMin slice" class="bottom-border">
                 <circle cx="5" cy="10" r="20" fill="#f4f4f4"/>
@@ -77,9 +78,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="background-rectangle" style="z-index:-1;">
                 <rect width="100%" height="100%" fill="#f4f4f4" />
             </svg>
-        </article>
+        </section>
         <section>
-            <div>
+            <div class="hidden">
                 <div id="intro"><h1 style="font-size: 28px;color: darkslategrey;">Welcome to Shaw Arena</h1>
                 <p>Your destination for sports, concerts, and community events. Whether you're cheering for your favorite team, enjoying live performances from world-renowned artists, 
                 or participating in vibrant community gatherings, we offer an unparalleled experience for everyone. 
@@ -91,10 +92,10 @@
         </section>
         <section>
             <div class="event-container">
-                <a><div class=event-box><h5>Spring Festival</h5><br><p>1/25/25 8AM</p></div></a>
-                <a><div class=event-box><h5>Columbus Community Fair</h5></div></a>
-                <a><div class=event-box><h5>Valentine Concert</h5></div></a>
-                <a><div class=event-box><h5>View more events here</h5></div></a>
+                <a><div class="event-box hidden" style="background-image: url('images/pexels-aubin-kirch-280714467-15672732.jpg');"><h5>Columbus Community Fair</h5><p style="font-size: 9pt;">01/16/25 8AM</p></div></a>
+                <a><div class="event-box hidden" style="background-image: url('images/pexels-badun-16551474.jpg');"><h5>Spring Festival</h5><br><p style="font-size: 9pt;">01/25/25 9AM</p></div></a>
+                <a><div class="event-box hidden" style="background-image: url('images/pexels-corleone-brown-2930373-4500123.jpg');"><h5>Valentine Concert</h5><p style="font-size: 9pt;">02/14/25 5PM</p></div></a>
+                <a href="events.html" style="text-decoration: none;"><div class="event-box hidden" style="background-image: url('images/pexels-eduardo-fuentes-loya-841371238-19471283.jpg');"><h5>View more events here</h5><p style="font-size: 9pt;">...</p></div></a>
             </div>
         </section>
 

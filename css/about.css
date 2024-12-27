@@ -114,7 +114,13 @@ main a {
 main a:hover {
     color: var(--accent-color);
 }
-
+.team-members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    text-align: center;
+}
 @media(max-width: 900px) {
     .links-container{
         flex-direction: column;
@@ -174,3 +180,4 @@ main a:hover {
         font-size: 1.25rem;
     }
 }
+
