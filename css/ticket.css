@@ -88,7 +88,7 @@ main{
     padding-top: 5rem;
 }
 .form-container {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -120,7 +120,10 @@ input[type="text"], input[type="email"], input[type="date"], input[type="number"
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-
+input[type="text"]:hover, input[type="email"]:hover, input[type="date"]:hover, input[type="number"]:hover, input[type="text"]:active, input[type="email"]:active, input[type="date"]:active, input[type="number"]:active {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), 
+    -5px -5px 10px white;
+}
 /* Change the dropdown border and background */
 select {
     appearance: none; /* Removes the default dropdown styling */
@@ -135,6 +138,8 @@ select {
 
 select:hover, select:focus {
     outline: none; /* Remove default blue outline */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
+    -3px -3px 10px white;
 }
 
 button {
@@ -146,6 +151,9 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), 
+    -10px -10px 10px white;
 }
 
 button:hover, button:active {
