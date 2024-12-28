@@ -85,9 +85,8 @@ article{
     max-width: 800px;
     margin: 3rem auto;
     padding: 1.5rem;
-    background: #fff;
+    background: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /* Headings */
 h2 {
@@ -120,6 +119,10 @@ main a:hover {
     justify-content: space-around;
     gap: 1rem;
     text-align: center;
+}
+.team-members div div{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), 
+    -10px -10px 10px white;
 }
 @media(max-width: 900px) {
     .links-container{

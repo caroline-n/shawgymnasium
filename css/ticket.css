@@ -122,7 +122,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="number"
 }
 input[type="text"]:hover, input[type="email"]:hover, input[type="date"]:hover, input[type="number"]:hover, input[type="text"]:active, input[type="email"]:active, input[type="date"]:active, input[type="number"]:active {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), 
-    -5px -5px 10px white;
+    -5px -5px 5px white;
 }
 /* Change the dropdown border and background */
 select {
@@ -139,7 +139,7 @@ select {
 select:hover, select:focus {
     outline: none; /* Remove default blue outline */
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
-    -3px -3px 10px white;
+    -3px -3px 5px white;
 }
 
 button {
