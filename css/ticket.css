@@ -96,14 +96,10 @@ main{
 }
 /* Applying the accent-color and caret-color to the ticketForm */
 #ticketForm {
-    /* Change the caret color */
     caret-color: var(--accent-color);  
-    
-    /* Change the accent color (applies to form controls like checkboxes, radio buttons, etc.) */
     accent-color: var(--accent-color); 
 }
 
-/* Optional: You can also apply specific styles to the input and textarea elements within the form */
 #ticketForm input, #ticketForm textarea {
     caret-color: var(--accent-color); /* Ensuring the caret color is applied inside input/textarea */
 }
@@ -137,12 +133,6 @@ select {
     font-size: 10pt;
 }
 
-/* Add custom styles for the dropdown arrow */
-select::-ms-expand {
-    display: none; /* Remove arrow in Internet Explorer */
-}
-
-/* Add hover and focus styles */
 select:hover, select:focus {
     outline: none; /* Remove default blue outline */
 }
@@ -209,6 +199,7 @@ button:hover, button:active {
         z-index: 9;
     }
 }
+
 /*function doPost(e) {
     const sheet = SpreadsheetApp.openById("1CgvGyVMq9G3tGmU_LnSEdgFgaDCieODWglYsfwkYVJY").getSheetByName("Sheet1");
 

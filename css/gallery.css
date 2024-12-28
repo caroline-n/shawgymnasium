@@ -84,6 +84,18 @@ nav svg{
 main{
     margin: 16px 16px;
 }
+/*Deviding images into columns*/
+.list > img{
+    width: 100%;
+    margin-bottom: 1em;
+    /*max-width: 300px;
+    object-fit: cover;*/
+}
+.list{
+    columns:300px;
+}
+
+/*Responsive design*/
 @media(max-width: 900px) {
     .links-container{
         flex-direction: column;
@@ -125,13 +137,4 @@ main{
         left: 0;
         z-index: 9;
     }
-}
-.list > img{
-    width: 100%;
-    margin-bottom: 1em;
-    /*max-width: 300px;
-    object-fit: cover;*/
-}
-.list{
-    columns:300px;
 }

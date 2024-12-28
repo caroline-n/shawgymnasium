@@ -139,6 +139,8 @@ iframe, #seating-chart, .text-span{
 iframe{
     height:450px;
 }
+
+/*Responsive Design*/
 @media(max-width: 900px) {
     .links-container{
         flex-direction: column;
