@@ -28,6 +28,7 @@ This project is for educational purposes as part of the FBLA competition. All co
 
 ## Acknowledgments
 Special thanks to:
+- app.fastbots.ai for customer support chatbot
 - Google Apps Script
 - Google Fonts for fonts and icons
 - Canva for logo
