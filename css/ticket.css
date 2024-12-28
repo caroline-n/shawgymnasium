@@ -125,6 +125,28 @@ input[type="text"], input[type="email"], input[type="date"], input[type="number"
     border-radius: 4px;
 }
 
+/* Change the dropdown border and background */
+select {
+    appearance: none; /* Removes the default dropdown styling */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    border: 1px solid #ddd;
+    color: var(--accent-color); /* Green text */
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 10pt;
+}
+
+/* Add custom styles for the dropdown arrow */
+select::-ms-expand {
+    display: none; /* Remove arrow in Internet Explorer */
+}
+
+/* Add hover and focus styles */
+select:hover, select:focus {
+    outline: none; /* Remove default blue outline */
+}
+
 button {
     width: 100%;
     padding: 10px;
