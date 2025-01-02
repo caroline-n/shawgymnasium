@@ -150,6 +150,9 @@ nav svg{
     padding: 50pt 16pt 50pt 6pt;
     background-color:#f4f4f4;
 }
+.event-container a:visited{
+    color: var(--color-1);
+}
 .event-box{
     flex: 1;
     text-align: left;
