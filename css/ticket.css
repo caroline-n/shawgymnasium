@@ -102,7 +102,7 @@ main{
 }
 
 #ticketForm input, #ticketForm textarea {
-    caret-color: var(--accent-color); /* Ensuring the caret color is applied inside input/textarea */
+    caret-color: var(--accent-color); 
 }
 
 h2 {
