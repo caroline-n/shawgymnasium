@@ -91,7 +91,8 @@ main{
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    0 0 5px cornsilk;
     width: 300px;
 }
 /* Applying the accent-color and caret-color to the ticketForm */
@@ -146,6 +147,8 @@ select:hover, select:focus {
     width: 127px;
     background-color: white;
     color: cadetblue;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
+    -3px -3px 5px white;
 }
 
 button {
