@@ -85,7 +85,7 @@ main{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 .form-container {
     background-color: #f9f9f9;
@@ -107,6 +107,7 @@ main{
 
 h2 {
     text-align: center;
+    font-size: 1.4rem;
 }
 
 label {

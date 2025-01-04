@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve your ticket for an event at Shaw's Gymnasium in one minute.">
+    <title>Ticket Reservation | Shaw's Gymnasium</title>
+    <link rel="icon" href="images/grey-logo.png">
+    <link rel="stylesheet" href="css/ticket.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cm57a5k4s0ly4s5blb97jpxli"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+        
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> 
+            </label>
+
+
+            <a id="home-link" href="index.html"><img src="images/grey-logo.png" alt="grey-Black White Minimalist SImple Monogram Typography Logo" style="height: 69px; margin-right:10px;"></a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="help.html">Help</a>
+            <a href="events.html">Events</a>
+            <a href="ticket.html"  style="color: darkslategray;">Tickets</a>
+            <a href="information.html">Information</a>
+            <a href="planner.html">Planner</a>
+        </div>
+
+    </nav>
+    
+    <main>
+    <article id="box-office">
+        <div class="form-container">
+            <h2>Reserve Your Tickets</h2>
+            <form id="ticketForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="eventDate">Event Date:</label>
+                <select id="eventDate" required>
+                    <option value="" disabled selected>Select a date</option>
+                    <option value="2025-01-16">January 16, 2025</option>
+                    <option value="2025-01-25">January 25, 2025</option>
+                    <option value="2025-02-14">February 14, 2025</option>
+                </select>
+            
+                <label for="quantity">Number of Tickets:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="8" required>
+            
+                <button class="start-again" onclick="location.reload()">Start again</button>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="confirmationMessage"></p>         
+        </div>
+    </article>      
+    </main>
+    <script src="js/ticket.js"></script>
+</body>
+</html>
