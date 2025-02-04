@@ -282,7 +282,7 @@ footer{
         padding: 16px 20vw 16px 23vw;
     }
 }
-@media(max-height: 700px) or (min-height: 1000px){
+@media(max-height: 700px) or (min-height: 900px){
     .background-rectangle {
         display: none;
     }
