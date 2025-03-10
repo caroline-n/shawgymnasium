@@ -75,7 +75,8 @@ const updateCalendar = (month, year, events) => {
 
     const theFirst = new Date();
     theFirst.setMonth(month);
-    theFirst.setFullYear(year);
+    theFirst.setFullYear(year, month, 1);  
+
 
     const theFirstDayOfWeek = theFirst.getDay();
     const monthName = months[month]; 
